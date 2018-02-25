@@ -10,5 +10,6 @@ namespace CohesiveSoftware.Data.Interfaces
         IEnumerable<T> GetAll(bool isDeleted = false);
         T Upsert(M model);
         void Delete(int id);
+        void Restore(int id);
     }
 }
