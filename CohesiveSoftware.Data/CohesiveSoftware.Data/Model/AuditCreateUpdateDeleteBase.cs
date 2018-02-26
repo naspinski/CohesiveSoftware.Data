@@ -16,5 +16,11 @@ namespace CohesiveSoftware.Data.Model
             Deleted = DateTime.UtcNow;
             DeletedBy = user;
         }
+
+        public void Restore(string user)
+        {
+            Deleted = null;
+            UpdatedBy = user;
+        }
     }
 }
